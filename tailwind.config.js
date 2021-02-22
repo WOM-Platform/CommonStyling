@@ -1,15 +1,12 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: false
+  },
+  darkMode: false,
   theme: {
-    screens: {
-      sm: '576px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-    },
     fontFamily: {
-      display: ['Alata', 'sans-serif'],
-      body: ['Poppins', 'sans-serif'],
+      display: ['Alata', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      body: ['Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
     },
     fontSize: {
       sm: ['14px', '20px'],
@@ -20,11 +17,12 @@ module.exports = {
     container: {
       center: true
     },
-    extend: {
-      colors: {
-        primary: '#2a69ff'
-      }
-    },
+    colors: {
+      transparent: 'transparent',
+      primary: '#2a69ff',
+      //gray: colors.coolGray,
+      //red: colors.rose
+    }
   },
   variants: {},
   plugins: [],
